@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribution - Ration Shop Management</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../applayout.js" defer></script>
+</head>
+<body>
+
+    <staff-app-layout no-header>
+        <!-- Page Header with Back Arrow -->
+        <div class="page-header">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h2>Distribution</h2>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" style="color: #8c7866;"></i>
+            <input type="text" placeholder="Search for a Ration Card">
+        </div>
+       <!--filter-->
+       <div class="filter-tabs">
+            <button type="button" class="tab-btn active">Today</button>
+            <button type="button" class="tab-btn">This Week</button>
+            <button type="button" class="tab-btn">This Month</button>
+        </div>
+        <!-- Distribution List Container -->
+        <div class="distribution-list">
+        <!-- Record Card 1 -->
+            <div class="distribution-card">
+                <div class="dist-top-row">
+                    <div class="card-user-info">
+                        <span class="card-number">11345</span>
+                        <span class="user-name">S.Maria</span>
+                    </div>
+                    <div class="dist-items">Rice,Sugar,Oil,Wheat,Dhall,Kerosene</div>
+                    <div class="dist-amount">₹220</div>
+                </div>
+                <div class="dist-timestamp">22 Sept 2026, 2.33 p.m</div>
+            </div>
+
+            <!-- Record Card 2 -->
+            <div class="distribution-card">
+                <div class="dist-top-row">
+                    <div class="card-user-info">
+                        <span class="card-number">22342</span>
+                        <span class="user-name">J.Shobi</span>
+                    </div>
+                    <div class="dist-items">Rice,Sugar,Oil,Wheat,Dhall,Kerosene</div>
+                    <div class="dist-amount">₹220</div>
+                </div>
+                <div class="dist-timestamp">22 Sept 2026, 2.33 p.m</div>
+            </div>
+
+            <!-- Record Card 3 -->
+            <div class="distribution-card">
+                <div class="dist-top-row">
+                    <div class="card-user-info">
+                        <span class="card-number">67543</span>
+                        <span class="user-name">R.Shobese</span>
+                    </div>
+                    <div class="dist-items">Rice,Sugar,Oil,Wheat,Dhall</div>
+                    <div class="dist-amount">₹190</div>
+                </div>
+                <div class="dist-timestamp">22 Sept 2026, 1.33 p.m</div>
+            </div>
+
+        </div>
+    
+
+    </staff-app-layout>
+
+</body>
+</html>

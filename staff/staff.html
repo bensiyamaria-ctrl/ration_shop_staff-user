@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Staff Login</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../layout.js" defer></script>
+    <script type="module" src="staffClient.js"></script>
+</head>
+<body>
+
+    <login-layout>
+        <a href="index.html">← Back to Login</a>
+
+        <h3>Staff Login</h3>
+        <p>Access your staff account</p>
+
+        <form>
+            <div class="staff_Id">
+                <input
+                    type="text"
+                    id="staff_id"
+                    name="staff_id"
+                    placeholder="Staff ID"
+                    required
+                >
+            </div>
+
+            <div class="password">
+                <input
+                    type="password"
+                    id="staff_password"
+                    name="staff_password"
+                    placeholder="Enter Password"
+                    required
+                >
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </login-layout>
+
+</body>
+</html>

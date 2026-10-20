@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Home - Ration Shop Management</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../applayout.js" defer></script>
+</head>
+<body>
+
+    <staff-app-layout>
+        <!--Search Bar -->
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" style="color: #8c7866;"></i>
+            <input type="text" placeholder="Search for a Ration Card">
+        </div>
+
+        <!--Shop Information-->
+        <div class="shop-info">
+            <h2>Shop ID : 12345</h2>
+            <p>Main Ration Shop, Nagercoil</p>
+        </div>
+
+        <!--Shop Status Card-->
+        <div class="status-card">
+            <h3>Shop status</h3>
+            <div class="toggle-pill">
+                <label class="status-btn open active">
+                    <input type="radio" name="shop_status" value="open" checked>
+                    <span class="dot"></span> Open
+                </label>
+                <label class="status-btn closed">
+                    <input type="radio" name="shop_status" value="closed">
+                    <span class="dot"></span> closed
+                </label>
+            </div>
+        </div>
+
+        <!--Important Update-->
+        <section class="updates-section">
+            <div class="updates-title">
+                <i class="fa-solid fa-bullhorn" style="color: #5d4b3e;"></i>
+                <h3>Important Updates</h3>
+            </div>
+
+            <!--Update 1-->
+            <div class="update-card green-card">
+                <div class="update-icon green-icon">
+                    <i class="fa-solid fa-bullhorn" style="color: #fff;"></i>
+                </div>
+                <div class="update-text">
+                    <h4>New Distribution Guidelines</h4>
+                    <p>New guidelines have been issued for ration shops.</p>
+                </div>
+            </div>
+
+            <!--Update 2-->
+            <div class="update-card tan-card">
+                <div class="update-icon tan-icon">
+                    <i class="fa-solid fa-calendar-days" style="color: #fff;"></i>
+                </div>
+                <div class="update-text">
+                    <h4>Shop Holiday Notice</h4>
+                    <p>Ration shops will stay closed on Friday, 15th August 2025 for Independence Day.</p>
+                </div>
+            </div>
+        </section>
+    </staff-app-layout>
+    <script>
+        const statusInputs = document.querySelectorAll('.status-btn input[type="radio"]');
+
+        statusInputs.forEach(input => {
+            input.addEventListener('change', (e) => {
+                // Remove the 'active' class from both buttons
+                document.querySelectorAll('.status-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Add the 'active' class to the clicked button's label
+                const selectedLabel = e.target.closest('.status-btn');
+                if (selectedLabel) {
+                    selectedLabel.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

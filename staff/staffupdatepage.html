@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Stock - Ration Shop Management</title>
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Layout Script -->
+    <script src="../applayout.js" defer></script>
+</head>
+<body>
+
+    <staff-app-layout no-header>
+        <!-- Page Header with Back Arrow -->
+        <div class="page-header">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h2>Update Stock</h2>
+        </div>
+
+        <!-- Stock Update Form Container -->
+        <div class="stock-form">
+            
+            <!-- Product Field -->
+            <div class="form-group">
+                <label>Product</label>
+                <div class="custom-select-box">
+                    <span>Rice</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <!-- Current Stock Field -->
+            <div class="form-group">
+                <label>Current stock</label>
+                <input type="text" value="50 Kg" readonly>
+            </div>
+
+            <!-- Update Quantity Field with Stepper -->
+            <div class="form-group">
+                <label>update Quantity</label>
+                <div class="quantity-stepper">
+                    <button type="button" class="stepper-btn">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <span class="quantity-value">10</span>
+                    <button type="button" class="stepper-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Reason Field -->
+            <div class="form-group">
+                <label>Reason</label>
+                <input type="text" placeholder="Updation reason">
+            </div>
+
+            <!-- Update Submit Button -->
+            <button type="submit" class="update-submit-btn">Update</button>
+
+        </div>
+    </staff-app-layout>
+
+</body>
+</html>

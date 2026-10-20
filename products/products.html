@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ration Shop - Products</title>
+    <script src="../layout.js" defer></script>
+   <script type="module" src="productClient.js"></script>
+</head>
+<body>
+    <login-layout id="product-list-page">
+        <a href="index.html">← Back to Home</a>
+
+        <h2>Ration Shop Products</h2>
+        <p>View available ration products</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Available Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody id="product-list">
+                <tr>
+                    <td colspan="3">Loading products...</td>
+                </tr>
+            </tbody>
+        </table>
+    </login-layout>
+</body>
+</html>
