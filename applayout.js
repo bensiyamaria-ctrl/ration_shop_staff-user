@@ -21,15 +21,15 @@ class StaffAppLayout extends HTMLElement {
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
-            <a href="stock.html" class="nav-item ${window.location.pathname.includes('stock') ? 'active' : ''}">
+            <a href="staffupdatepage.html" class="nav-item ${window.location.pathname.includes('stock') ? 'active' : ''}">
                 <i class="fa-solid fa-boxes-stacked"></i>
                 <span>Stock</span>
             </a>
-            <a href="distributions.html" class="nav-item ${window.location.pathname.includes('distributions') ? 'active' : ''}">
+            <a href="staffdistributionpage.html" class="nav-item ${window.location.pathname.includes('distributions') ? 'active' : ''}">
                 <i class="fa-solid fa-clipboard-list"></i>
                 <span>distributions</span>
             </a>
-            <a href="profile.html" class="nav-item ${window.location.pathname.includes('profile') ? 'active' : ''}">
+            <a href="staffprofile.html" class="nav-item ${window.location.pathname.includes('profile') ? 'active' : ''}">
                 <i class="fa-solid fa-user"></i>
                 <span>Profile</span>
             </a>
