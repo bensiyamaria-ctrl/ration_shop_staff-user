@@ -27,7 +27,7 @@ class UserAppLayout extends HTMLElement {
             </a>
             <a href="distributions.html" class="nav-item ${window.location.pathname.includes('distributions') ? 'active' : ''}">
                 <i class="fas fa-bell"></i>
-                <span>notifications</span>
+                <span>Notifications</span>
             </a>
             <a href="shops.html" class="nav-item ${window.location.pathname.includes('shops') ? 'active' : ''}">
                 <i class="far fa-file-alt"></i>

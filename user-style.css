@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 
-body:has(staff-app-layout) {
+body:has(user-app-layout) {
     align-items: flex-start;
     padding: 20px 0;
     box-sizing: border-box;
@@ -153,47 +153,3 @@ body:has(staff-app-layout) {
     font-weight: bold;
 }
 
-/*header*/
-/* Ensure the body and html take up the full height */
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: #4b4948; /* Outer background color */
-    display: flex;
-    justify-content: center;
-}
-
-/* Style the custom element container */
-user-app-layout {
-    width: 100%;
-    max-width: 600px; /* Limits width like a mobile app container */
-    min-height: 100vh;
-    background: #f3ebe0; /* App background color */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* CRITICAL: Forces elements to start from the top, not center */
-    box-sizing: border-box;
-    position: relative;
-}
-
-/* Style for the page content wrapper */
-.page-content {
-    flex: 1; /* Pushes footer down if content is short */
-    padding: 16px;
-    box-sizing: border-box;
-}
-
-/* Header styles matching your layout */
-.app-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 20px;
-}
-
-.divider {
-    border: none;
-    border-top: 1px solid #dcd2c4;
-    margin: 0;
-}
