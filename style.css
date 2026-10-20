@@ -345,12 +345,26 @@ body:has(#product-list) .login-box {
     color: #5a4538;
     font-weight: bold;
 }
-/* Page Header */
+
+/* Page Header with Back Arrow */
 .page-header {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.page-header i {
+    font-size: 20px;
+    color: #5a4538; /* Changes the back arrow color */
+    cursor: pointer;
+}
+
+.page-header h2 {
+    font-size: 24px;
+    color: #5a4538; /* Changes 'Profile' heading from black to brown */
+    margin: 0;
+    font-weight: 600;
 }
 
 /* Result Card Box */
@@ -539,4 +553,107 @@ body:has(#product-list) .login-box {
     margin-top: 10px;
 }
 
+/* Profile Section (Hero Header) */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background: #b59f8c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.profile-section h3 {
+    font-size: 20px;
+    color: #5a4538;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+}
+
+.profile-role {
+    font-size: 14px;
+    color: #8c7866;
+}
+
+/* Profile Details & Actions Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #e3d9cd;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Info Rows (Staff ID & Shop ID) */
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid #e3d9cd;
+    font-size: 14px;
+}
+
+.row-label {
+    color: #7a6558;
+}
+
+.row-value {
+    color: #5a4538;
+    font-weight: 600;
+}
+
+/* Action Links & Buttons (Help, Language, Logout) */
+.profile-action-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-bottom: 1px solid #e3d9cd;
+    text-decoration: none;
+    color: #5a4538;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.profile-action-row:last-child {
+    border-bottom: none;
+}
+
+.profile-action-row:hover {
+    background: rgba(242, 233, 220, 0.5);
+}
+
+.action-icon {
+    width: 24px;
+    color: #8c7866;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Semantic Logout Button Reset & Styles */
+.profile-action-row.logout-row {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: #b83232;
+}
+
+.profile-action-row.logout-row .action-icon {
+    color: #b83232;
+}
 
