@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3ece2;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:has(staff-app-layout) {
+    align-items: flex-start;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* Staff Home Page Container Styling */
+
+/* Header inside Web Component */
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #a8927d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text h1 {
+    font-size: 20px;
+    color: #5c4433;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.logo-text span {
+    font-size: 14px;
+    color: #a38c77;
+    font-weight: 400;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e0d4c5;
+    margin-bottom: 16px;
+}
+
+
+
+
+/* Important Updates */
+.updates-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.updates-title h3 {
+    font-size: 16px;
+    color: #5d4b3e;
+    margin: 0;
+}
+
+.update-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.green-card {
+    background: #eef8f3;
+    border: 1px solid #d2eae0;
+}
+
+.tan-card {
+    background: #edd8b7;
+    border: 1px solid #e2c9a3;
+}
+
+.update-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.green-icon {
+    background: #10a360;
+}
+
+.tan-icon {
+    background: #cfb887;
+}
+
+.update-text h4 {
+    margin: 0 0 2px 0;
+    font-size: 13px;
+    color: #222;
+}
+
+.update-text p {
+    margin: 0;
+    font-size: 11px;
+    color: #555;
+    line-height: 1.2;
+}
+
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f7f1e8;
+    border-top: 1px solid #e3d9cd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #7c6857;
+    font-size: 11px;
+}
+
+.nav-item.active {
+    color: #5a4538;
+    font-weight: bold;
+}
+
+/*header*/
+/* Ensure the body and html take up the full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #4b4948; /* Outer background color */
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the custom element container */
+user-app-layout {
+    width: 100%;
+    max-width: 600px; /* Limits width like a mobile app container */
+    min-height: 100vh;
+    background: #f3ebe0; /* App background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* CRITICAL: Forces elements to start from the top, not center */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Style for the page content wrapper */
+.page-content {
+    flex: 1; /* Pushes footer down if content is short */
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* Header styles matching your layout */
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #dcd2c4;
+    margin: 0;
+}
