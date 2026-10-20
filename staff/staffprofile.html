@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Ration Shop Management</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../applayout.js" defer></script>
+</head>
+<body>
+
+    <staff-app-layout no-header>
+        <!-- Page Header with Back Arrow -->
+        <div class="page-header">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h2>Profile</h2>
+        </div>
+        <!--profile section -->
+        <div class="profile-section">
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h3>S.Divya</h3>
+            <span class="profile-role">Staff</span>
+        </div>
+       <!-- Profile Details & Actions Card -->
+        <div class="profile-card">
+            
+            <!-- Staff ID Row -->
+            <div class="profile-row">
+                <span class="row-label">Staff Id</span>
+                <span class="row-value">1567860A</span>
+            </div>
+
+            <!-- Shop ID Row -->
+            <div class="profile-row">
+                <span class="row-label">Shop Id</span>
+                <span class="row-value">12345</span>
+            </div>
+
+            <!-- Help & Support links to help.html -->
+        <a href="help.html" class="profile-action-row">
+            <div class="action-icon">
+            <i class="fa-solid fa-circle-question"></i>
+            </div>
+            <span>Help & support</span>
+        </a>
+
+    <!-- Language links to language.html -->
+        <a href="language.html" class="profile-action-row">
+            <div class="action-icon">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <span>Language</span>
+        </a>
+
+
+    <!-- Log out as a semantic button -->
+        <button type="button" class="profile-action-row logout-row" style="width: 100%; background: none; border: none; text-align: left; cursor: pointer;">
+        <div class="action-icon">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+        <span>Log out</span>
+    </button>
+
+        </div>
+    </staff-app-layout>
+</body>
+</html>
